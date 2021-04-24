@@ -21,7 +21,6 @@ let preference = {
 mercadopago.preferences
   .create(preference)
   .then(function (response) {
-    // Este valor reemplazará el string "<%= global.id %>" en tu HTML
     global.id = response.body.id;
   })
   .catch(function (error) {
